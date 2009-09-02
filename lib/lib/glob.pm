@@ -3,7 +3,7 @@ package lib::glob;
 use warnings;
 use strict;
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 use File::Glob qw(bsd_glob);
 
@@ -23,7 +23,7 @@ __END__
 
 =head1 NAME
 
-lib::glob - glob patter and add to module seach path
+lib::glob - glob patterns and add matching dirs to module search path
 
 =head1 SYNOPSIS
 
@@ -32,25 +32,23 @@ From Perl...
     use lib::glob '../*/lib';
     use lib::glob '*/lib:/usr/local/perl/*/lib';
 
-And from the shell...
+or from the shell...
 
     perl -Mlib::glob='*/lib:/usr/local/perl/*/lib' script.pl
 
 
 =head1 DESCRIPTION
 
-This module globs the given paths and add then to @INC.
+This module globs the given paths and adds then to @INC.
 
-Several path patterns can be passed in a single call separated by a
-colon (or a semicolon on Windows).
+Several path patterns can be passed in a single call separated by
+colons (or by semicolons on Windows).
 
 =head1 BUGS
 
-Please report any bugs or feature requests to C<bug-lib-glob at
-rt.cpan.org>, or through the web interface at
-L<http://rt.cpan.org/NoAuth/ReportBug.html?Queue=lib-glob>.  I will be
-notified, and then you'll automatically be notified of progress on
-your bug as I make changes.
+Please report any bugs or feature requests through the web interface
+at L<http://rt.cpan.org/NoAuth/ReportBug.html?Queue=lib-glob> or just
+send me and email.
 
 =head1 COPYRIGHT & LICENSE
 
@@ -58,6 +56,6 @@ Copyright 2009 Salvador FandiE<ntilde>o (sfandino@yahoo.com), all
 rights reserved.
 
 This program is free software; you can redistribute it and/or modify it
-under the same terms as Perl 5.10.0 or later itself.
+under the same terms as Perl 5.10.0 or any later version.
 
 =cut

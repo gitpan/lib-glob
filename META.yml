@@ -1,7 +1,7 @@
 --- #YAML:1.0
 name:                lib-glob
-version:             0.01
-abstract:            glob patter and add to module seach path
+version:             0.02
+abstract:            glob patterns and add matching dirs to module search path
 license:             ~
 author:              
     - Salvador Fandiño <sfandino@yahoo.com>
